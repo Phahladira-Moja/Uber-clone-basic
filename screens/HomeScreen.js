@@ -6,6 +6,7 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import { GOOGLE_MAPS_API_KEY } from "@env";
 import { useDispatch } from "react-redux";
 import { setDestination, setOrigin } from "../slices/navSlice";
+
 const HomeScreen = () => {
   const dispatch = useDispatch();
 
@@ -39,6 +40,8 @@ const HomeScreen = () => {
                 description: data.description,
               })
             );
+
+            dispatch(setDestination(null));
           }}
           minLength={2}
           fetchDetails={true}
