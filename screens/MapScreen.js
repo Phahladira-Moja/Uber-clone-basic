@@ -11,10 +11,10 @@ const MapScreen = () => {
 
   return (
     <View>
-      <View className="h-1/2">
+      <View className="h-1/3">
         <Map />
       </View>
-      <View className="h-1/2">
+      <View className="h-2/3">
         <Stack.Navigator>
           <Stack.Screen
             name="NavigateCard"
