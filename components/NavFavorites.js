@@ -12,7 +12,7 @@ const data = [
   {
     id: "456",
     icon: "briefcase",
-    location: "work",
+    location: "Work",
     destination: "London Eye, London, UK",
   },
 ];
